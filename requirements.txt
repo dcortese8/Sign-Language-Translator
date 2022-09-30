@@ -1,0 +1,8 @@
+tensorflow
+tensorflow-macos
+tensorflow-metal
+opencv-python 
+mediapipe 
+sklearn 
+matplotlib 
+numpy 
