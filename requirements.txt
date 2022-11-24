@@ -1,12 +1,12 @@
-numpy
-pandas
 opencv-python
-tensorflow
-tensorflow-addons
-tensorflow_hub
-tensorflow-datasets
-pyyaml
-gin-config
-immutabledict
+pandas
+scipy
+tensorflow-hub
+tensorflow_datasets
+tensorflow-io
 pycocotools
+immutabledict
+gin_config
+pyyaml
+typeguard
 
