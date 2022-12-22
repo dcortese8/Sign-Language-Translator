@@ -59,6 +59,6 @@ class FrameGenerator:
         for path, name in pairs:
             video_frames = frames_from_video_file(path, self.n_frames) 
             #label = tf.reshape(tf.one_hot(self.class_ids_for_name[name], 3), (1,3)) # Encode labels
-            label = tf.one_hot(self.class_ids_for_name[name], 3)
+            label = tf.one_hot(self.class_ids_for_name[name], len(classes))
             #label = self.class_ids_for_name[name]
             yield video_frames, label
