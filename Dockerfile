@@ -1,7 +1,7 @@
 #FROM python:3.10.6
 FROM tensorflow/tensorflow:latest-gpu-jupyter
 
-WORKDIR /usr/src/app
+#WORKDIR /usr/src/app
 
 RUN apt-get update
 RUN apt-get install ffmpeg libsm6 libxext6 git  -y
@@ -29,7 +29,8 @@ RUN rm -r addons
 # RUN cp -r addons/tensorflow_addons /usr/local/lib/python3.10/site-packages
 # RUN rm -r addons
 
-COPY . /usr/src/app
+#COPY . /usr/src/app
+ENV JUPYTER_ENABLE_LAB=yes
 
 #ENTRYPOINT /bin/bash
 #ENTRYPOINT ["tail"]
