@@ -30,7 +30,7 @@ RUN rm -r addons
 # RUN rm -r addons
 
 #COPY . /usr/src/app
-ENV JUPYTER_ENABLE_LAB=yes
+COPY . ./
 
 #ENTRYPOINT /bin/bash
 #ENTRYPOINT ["tail"]
